@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)c-%p^_8%sk1^+0l9l^f6y%1blfaw#7f2*1=hzu*+w#3&s0pb7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://eskill-env.eba-wz84mfu3.us-east-1.elasticbeanstalk.com/', '127.0.0.1']
 
 
 # Application definition
@@ -92,12 +92,10 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'moreplexgh_admin',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'Moreplexgh',
+        'USER': 'Moreplex_admin',
         'PASSWORD': 'U^#qs9932AnH*h9',
-        'HOST': 'localhost',
-        'PORT': '',
     }
 }
 
