@@ -92,11 +92,14 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'Moreplexgh',
-        'USER': 'Moreplex_admin',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ebdb',
+        'USER': 'moreplexAdmin',
         'PASSWORD': 'U^#qs9932AnH*h9',
+        'HOST': 'aa1ayl9240z5fqc.ctg3vwzjpufk.us-east-1.rds.amazonaws.com',
+        'PORT': 5432,
     }
+    
 }
 
 
