@@ -45,7 +45,7 @@ urlpatterns = [
 
     path('api/registration/', include('dj_rest_auth.registration.urls')),
     
-    path('openapi/', get_schema_view(
+    path('developer-docs/', get_schema_view(
         title="Moreplex Backend Documentations",
         description="API documentation for Frontend Developers"
     ), name='openapi-schema'),
