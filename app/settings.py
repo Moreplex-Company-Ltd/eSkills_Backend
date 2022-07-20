@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)c-%p^_8%sk1^+0l9l^f6y%1blfaw#7f2*1=hzu*+w#3&s0pb7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eskill-env.eba-wz84mfu3.us-east-1.elasticbeanstalk.com', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'eskill-env.eba-wz84mfu3.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'allauth.socialaccount.providers.google',
     'users',
+    'lessons',
     'django_extensions',
 ]
 
