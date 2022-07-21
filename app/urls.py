@@ -56,6 +56,6 @@ urlpatterns = [
     ), name='swagger-ui'),
 
     path('api/facebook/', FacebookLogin.as_view(), name='fb_login'),
-    path('api/twitter/', TwitterLogin.as_view(), name='twitter_login'),
+    path('accounts/', include('allauth.urls'), name='socialaccount_signup'),
     path('api/google/', GoogleLogin.as_view(), name='google_login'),
 ]

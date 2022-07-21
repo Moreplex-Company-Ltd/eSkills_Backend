@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.twitter',
     'rest_framework_simplejwt.token_blacklist',
     'allauth.socialaccount.providers.google',
     'users',
