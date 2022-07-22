@@ -25,6 +25,7 @@ from dj_rest_auth.social_serializers import TwitterLoginSerializer
 from dj_rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from allauth.socialaccount.providers.oauth2.client import OAuth2Client
+from lessons.urls import urlpatterns
 
 class FacebookLogin(SocialLoginView):
     adapter_class = FacebookOAuth2Adapter
@@ -58,4 +59,6 @@ urlpatterns = [
     path('api/facebook/', FacebookLogin.as_view(), name='fb_login'),
     path('accounts/', include('allauth.urls'), name='socialaccount_signup'),
     path('api/google/', GoogleLogin.as_view(), name='google_login'),
+
+    path('api/', include((urlpatterns, 'lessons')))
 ]
